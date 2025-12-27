@@ -1,8 +1,6 @@
 import copy
 import numpy as np
 from hyperopt import fmin, tpe, hp
-from matplotlib import pyplot as plt
-from sklearn.cross_decomposition import PLSRegression
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from sklearn.model_selection import KFold, train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -93,3 +91,4 @@ def CARS_Cloud(X, y,spectrum_range, N=40, cv=5):
     return best_features, MinIndex + 1, RMSECV[MinIndex], WaveNum[MinIndex]
 
     """
+
